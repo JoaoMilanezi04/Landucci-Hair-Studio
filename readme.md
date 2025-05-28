@@ -1,7 +1,6 @@
 # Landucci Hair Studio
 
-Este projeto é um site institucional para o salão **Landucci Hair Studio**, localizado em Rosário do Ivaí, Paraná. O objetivo é apresentar os serviços oferecidos, destacar a experiência do profissional Luciano Landucci Júnior, facilitar o contato com clientes e divulgar informações importantes como políticas de privacidade e devolução.
-
+Este projeto foi desenvolvido como parte de um trabalho acadêmico da faculdade, com o diferencial de atender um cliente real localizado em São Paulo: o salão Landucci Hair Studio. O site institucional tem como objetivo apresentar os serviços do salão, destacar a experiência do profissional Luciano Landucci, facilitar o contato com clientes e fornecer informações relevantes como políticas de privacidade e devolução.
 ## Estrutura do Projeto
 
 - **html/**: Contém as páginas HTML do site, incluindo a página inicial, serviços, procedimentos, políticas e barra de navegação.
