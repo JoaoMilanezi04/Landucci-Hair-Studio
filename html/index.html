@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landucci Hair Studio</title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/hotbar.css" />
+  </head>
+
+  <body>
+    <!-- Barra de navegação (carregada via JavaScript) -->
+    <div id="hotbar-include"></div>
+    <script>
+      fetch("hotbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("hotbar-include").innerHTML = data;
+        })
+        .catch((error) => {
+          console.error("Error al cargar la hotbar:", error);
+        });
+    </script>
+
+    <!-- Banner principal -->
+    <div class="banner">
+      <img src="../arquivos/banner-cabelereiro.jpg" alt="Banner do salão" />
+      <div class="banner-texto">
+        <h1>LANDUCCI HAIR STUDIO</h1>
+      </div>
+    </div>
+
+    <!-- Seção de apresentação -->
+    <section class="apresentacao-section">
+      <div class="apresentacao-container">
+        <div class="apresentacao-texto">
+          <h2>EXCELÊNCIA EM<br />ATENDIMENTO<br />PERSONALIZADO</h2>
+          <p>
+            Um salão de beleza criado para proporcionar uma experiência
+            personalizada e acolhedora, onde a saúde e a estética dos cabelos
+            são tratadas com excelência. Sob os cuidados de um profissional
+            dedicado e experiente, cada atendimento é exclusivo, focado nas
+            necessidades individuais de cada cliente. Com atenção aos detalhes,
+            produtos de alta qualidade e técnicas atualizadas, o ambiente foi
+            pensado para oferecer conforto, bem-estar e resultados que valorizam
+            a beleza natural.
+          </p>
+          <p>
+            O salão oferece uma variedade de serviços pensados para realçar a
+            beleza e cuidar profundamente dos cabelos. Entre os atendimentos
+            disponíveis estão hidratações que restauram a saúde dos fios,
+            escovas com acabamento impecável, cortes que valorizam o estilo
+            pessoal, colorações e mechas feitas com técnica e bom gosto, além de
+            penteados para ocasiões especiais.
+          </p>
+          <a href="../html/serviços.html" class="conheca-btn">Nossos Serviços</a>
+        </div>
+
+        <div class="apresentacao-imagem">
+          <img
+            src="../arquivos/mulher corte 2.jpeg"
+            alt="Atendimento personalizado"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de experiência -->
+    <section class="experiencia-section">
+      <div class="experiencia-container">
+        <div class="experiencia-texto">
+          <h2>
+            TRANSFORME SEU VISUAL<br />COM ESTILO<br />QUALIDADE E
+            EXCLUSIVIDADE..
+          </h2>
+          <p>
+            Com um atendimento personalizado e um alto padrão de qualidade,
+            nosso salão é referência em cuidados com os cabelos. Valorizamos não
+            apenas a beleza, mas também o bem-estar e a autoestima de quem passa
+            por nossas cadeiras. Inspirado pelas maiores redes de salões do
+            país, nosso espaço oferece um ambiente moderno, profissionais
+            qualificados e serviços diferenciados que acompanham as últimas
+            tendências do mercado. Estamos em constante evolução para
+            proporcionar a você uma experiência completa, com estilo próprio e
+            resultado impecável. Seu cabelo, seu estilo, nossa paixão.
+          </p>
+          <a
+            href="https://wa.me/5541991476983"
+            target="_blank"
+            class="conheca-btn"
+            >Agendar Horário</a>
+        </div>
+
+        <div class="experiencia-logo">
+          <div class="experiencia-anos">
+            <h2>
+              COM <span>4 ANOS</span> DE<br />EXPERIÊNCIA NO MERCADO<br />DA
+              BELEZA.
+            </h2>
+            <p>
+              O Landucci Hair Studio é sinônimo de dedicação, excelência e
+              estilo. Oferecemos serviços personalizados que destacam o melhor
+              de cada cliente. Nosso espaço foi pensado para proporcionar
+              conforto e sofisticação, com profissionais experientes e
+              atualizados com as tendências do setor, garantimos um serviço de
+              alta qualidade, feito com paixão e atenção aos detalhes. Landucci
+              Hair Studio — onde sua beleza é celebrada todos os dias.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé com informações de contato e links -->
+    <footer class="creditos-final">
+      <div class="creditos-coluna">
+        <!-- Logo e identificação -->
+        <div class="creditos-logos">
+          <img
+            src="../arquivos/logo3-removebg-preview.png"
+            width="130"
+            alt="Logo"
+          />
+          <h3>Landucci Hair Studio</h3>
+          <img
+            src="../arquivos/logo2-removebg-preview.png"
+            width="90"
+            alt="Logo 2"
+          />
+        </div>
+
+        <!-- Informações de contato -->
+        <div class="creditos-info">
+          <h3>Contato</h3>
+          <p>
+            Av. São Paulo, Rosário do Ivaí, 84900<br />
+            WhatsApp: (41) 99147-6983<br />
+            PIX: 021.531.792-03<br />
+            Luciano Landucci Júnior
+          </p>
+        </div>
+
+        <!-- Links para redes sociais -->
+        <div class="creditos-social">
+          <h3>Links</h3>
+          <div class="icones">
+            <a
+              href="https://wa.me/5541991476983"
+              target="_blank"
+              title="WhatsApp"
+            >
+              <img
+                src="../arquivos/whatszap.png"
+                alt="whatsapp"
+                width="80"
+                height="50"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/lulanduccihair?igsh=c3ZnNnc5Njhzc2Y4"
+              target="_blank"
+              title="Instagram"
+            >
+              <img
+                src="../arquivos/Instagram.png"
+                alt="instagram"
+                width="85"
+                height="45"
+              />
+            </a>
+            <a
+              href="https://maps.app.goo.gl/8dJCKBYfyUKnytQ26?g_st=ac"
+              target="_blank"
+              title="Google Maps"
+            >
+              <img
+                src="../arquivos/maps.png"
+                alt="maps"
+                width="45"
+                height="45"
+              />
+            </a>
+          </div>
+        </div>
+
+        <!-- Informações legais e créditos -->
+        <div class="creditos-legal">
+          <h3>Diretrizes</h3>
+          <div class="creditos-politicas">
+            <a href="politica-devolucao.html">Política de Devolução</a>
+            <a href="politica-privacidade.html">Política de Privacidade</a>
+          </div>
+
+          <div class="creditos-criadores">
+            <p>
+              © 2025 por Landucci Hair Studio.<br />
+              Criado por Afonso Braga e João Milanezi
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

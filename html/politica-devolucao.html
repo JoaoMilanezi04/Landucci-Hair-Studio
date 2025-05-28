@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Devolução - Landucci Hair Studio</title>
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/termos.css">
+  <link rel="stylesheet" href="../css/hotbar.css">
+</head>
+<body>
+  <!-- Barra de navegação (carregada via JavaScript) -->
+  <div id="hotbar-include"></div>
+  <script>
+    fetch("hotbar.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("hotbar-include").innerHTML = data;
+      })
+      .catch((error) => {
+        console.error("Error al cargar la hotbar:", error);
+      });
+  </script>
+
+  <!-- Conteúdo da Política de Devolução -->
+  <main class="termos-container">
+    <h1>Política de Devolução</h1>
+    
+    <div class="termos-content">
+      <p class="intro">
+        No Landucci Hair Studio, a satisfação dos nossos clientes é a nossa prioridade. 
+        Trabalhamos com dedicação para oferecer serviços e produtos de alta qualidade. 
+        No entanto, entendemos que imprevistos podem acontecer. Por isso, criamos uma 
+        política de devolução clara e transparente:
+      </p>
+      
+      <div class="termos-section">
+        <h2>1. Serviços Prestados</h2>
+        <p>
+          Devido à natureza dos serviços de beleza, não realizamos reembolsos por serviços já prestados. 
+          Caso você não esteja satisfeito com o resultado, pedimos que entre em contato conosco em até 48 horas 
+          após o atendimento. Teremos o prazer de oferecer um ajuste gratuito, caso a avaliação da equipe 
+          considere necessário.
+        </p>
+      </div>
+      
+      <div class="termos-section">
+        <h2>2. Produtos Vendidos</h2>
+        <p>
+          Aceitamos devolução ou troca de produtos comprados em nosso salão, desde que:
+        </p>
+        <ul>
+          <li>O produto esteja sem uso, lacrado e em perfeitas condições;</li>
+          <li>A devolução seja solicitada em até 7 dias corridos após a data da compra;</li>
+          <li>Seja apresentado o comprovante de compra.</li>
+        </ul>
+        <p>
+          Não aceitamos devoluções de produtos abertos, usados ou danificados após a compra, 
+          salvo em casos de defeito de fabricação.
+        </p>
+      </div>
+      
+      <div class="termos-section">
+        <h2>3. Produtos com Defeito</h2>
+        <p>
+          Caso o produto apresente algum defeito de fabricação, o cliente pode solicitar a troca ou 
+          devolução em até 30 dias após a compra. Após análise e confirmação do defeito, faremos a 
+          substituição do item ou o reembolso, conforme a preferência do cliente.
+        </p>
+      </div>
+      
+      <div class="termos-section">
+        <h2>4. Cancelamento de Agendamentos</h2>
+        <p>
+          Cancelamentos devem ser feitos com no mínimo 24 horas de antecedência.
+        </p>
+        <p>
+          Em caso de não comparecimento sem aviso prévio, poderá ser cobrada uma taxa de até 50% 
+          do valor do serviço agendado em atendimentos futuros.
+        </p>
+      </div>
+      
+      <div class="termos-section">
+        <p class="contato-info">
+          Para mais informações ou dúvidas sobre nossa política de devolução, entre em contato pelo 
+          WhatsApp: (41) 99147-6983 ou visite nosso salão.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Rodapé com informações de contato e links -->
+  <footer class="creditos-final">
+    <div class="creditos-coluna">
+      <!-- Logo e identificação -->
+      <div class="creditos-logos">
+        <img src="../arquivos/logo3-removebg-preview.png" width="130" alt="Logo" />
+        <h3>Landucci Hair Studio</h3>
+        <img src="../arquivos/logo2-removebg-preview.png" width="90" alt="Logo 2" />
+      </div>
+
+      <!-- Informações de contato -->
+      <div class="creditos-info">
+        <h3>Contato</h3>
+        <p>
+          Av. São Paulo, Rosário do Ivaí, 84900<br />
+          WhatsApp: (41) 99147-6983<br />
+          PIX: 021.531.792-03<br />
+          Luciano Landucci Júnior
+        </p>
+      </div>
+
+      <!-- Links para redes sociais -->
+      <div class="creditos-social">
+        <h3>Links</h3>
+        <div class="icones">
+          <a href="https://wa.me/5541991476983" target="_blank" title="WhatsApp">
+            <img src="../arquivos/whatszap.png" alt="whatsapp" width="80" height="50" />
+          </a>
+          <a href="https://www.instagram.com/lulanduccihair?igsh=c3ZnNnc5Njhzc2Y4" target="_blank" title="Instagram">
+            <img src="../arquivos/Instagram.png" alt="instagram" width="85" height="45" />
+          </a>
+          <a href="https://maps.app.goo.gl/8dJCKBYfyUKnytQ26?g_st=ac" target="_blank" title="Google Maps">
+            <img src="../arquivos/maps.png" alt="maps" width="45" height="45" />
+          </a>
+        </div>
+      </div>
+
+      <!-- Informações legais e créditos -->
+      <div class="creditos-legal">
+        <h3>Diretrizes</h3>
+        <div class="creditos-politicas">
+          <a href="politica-devolucao.html">Política de Devolução</a>
+          <a href="politica-privacidade.html">Política de Privacidade</a>
+        </div>
+
+        <div class="creditos-criadores">
+          <p>
+            © 2025 por Landucci Hair Studio.<br />
+            Criado por Afonso Braga e João Milanezi
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Estilos adicionais para a formatação da página de termos -->
+  <style>
+    .termos-container {
+      max-width: 900px;
+      margin: 120px auto 60px;
+      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .termos-container h1 {
+      color: #7c5a1f;
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 30px;
+      border-bottom: 2px solid #e1bb8b;
+      padding-bottom: 15px;
+    }
+    
+    .termos-content {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #333;
+    }
+    
+    .termos-content .intro {
+      font-style: italic;
+      margin-bottom: 25px;
+      color: #555;
+      border-left: 4px solid #e1bb8b;
+      padding-left: 15px;
+    }
+    
+    .termos-section {
+      margin-bottom: 30px;
+    }
+    
+    .termos-section h2 {
+      color: #7c5a1f;
+      font-size: 24px;
+      margin: 20px 0 15px;
+    }
+    
+    .termos-section ul {
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
+    
+    .termos-section ul li {
+      margin-bottom: 10px;
+    }
+    
+    .contato-info {
+      background: linear-gradient(90deg, #e1bb8b30 0%, #fff8e130 100%);
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: 500;
+      margin-top: 30px;
+    }
+  </style>
+</body>
+</html>

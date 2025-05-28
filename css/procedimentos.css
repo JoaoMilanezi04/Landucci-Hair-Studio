@@ -1,0 +1,503 @@
+/* ===== ESTILOS GLOBAIS ===== */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("../arquivos/FUNDO\ OFICIAL.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos gerais e tipografia */
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #faf7f2;
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.separador-dourado {
+    height: 3px;
+    width: 80px;
+    background: linear-gradient(90deg, #b88746, #fdf5a6, #b88746);
+    margin: 15px auto 30px;
+}
+
+.separador-mini {
+    height: 2px;
+    width: 40px;
+    background: linear-gradient(90deg, #b88746, #fdf5a6);
+    margin: 10px 0 15px;
+}
+
+/* ===== HOTBAR (BARRA DE NAVEGAÇÃO) ===== */
+.hotbar {
+  background: linear-gradient(to right, #e1bb8b, #fff8e1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.hotbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.hotbar-logo {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.hotbar-logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-text {
+  font-size: 22px;
+  font-weight: bold;
+  color: #7c5a1f;
+  margin-left: 10px;
+}
+
+.hotbar-links {
+  display: flex;
+  gap: 60px;
+  margin-left: 0;
+}
+
+.hot-link {
+  color: #7c5a1f;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 12px 25px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.hot-link:hover {
+  background-color: #7c5a1f;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.hot-link.active {
+  background-color: #7c5a1f;
+  color: white;
+}
+
+/* ===== SEÇÕES DE CLIENTE ===== */
+/* Estilo comum para seções cliente */
+.cliente1, .cliente2 {
+  width: 80%;
+  margin: 50px auto;
+  padding: 30px;
+  background-image: url("../arquivos/imagem1234.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+  color: #ffffff;
+  margin-top: 140px;
+}
+
+.cliente1 h2, .cliente2 h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #000000da;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: fantasy;
+}
+
+.cliente1 h3, .cliente2 h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15%;
+  font-family: fantasy;
+}
+
+.cliente1 h3 span, .cliente2 h3 span {
+  font-weight: 500;
+}
+
+.cliente1 img, .cliente2 img {
+  max-width: 45%;
+  height: auto;
+  margin: 10px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== SEÇÕES DE PENTEADO ===== */
+/* Primeira seção - Encanto Trançado */
+.conteudo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 100px 0 0 40px;
+  position: relative;
+  min-height: 300px;
+  margin-bottom: 20px;
+}
+
+.texto h1 {
+  margin-top: 50px;
+  margin-left: 250px;
+  font-size: 80px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.texto h3 {
+  flex: 1;
+  margin-top: 100px;
+  margin-left: 100px;
+  max-width: 700px;
+  font-size: 22px;
+  text-align: justify;
+}
+
+.texto p {
+  flex: 1;
+  margin-top: 50px;
+  margin-left: 100px;
+  max-width: 700px;
+  font-size: 22px;
+  text-align: justify;
+}
+
+.imagens-penteados {
+  position: relative;
+  margin-left: 80px;
+  margin-top: 150px;
+  margin-bottom: 10px;
+}
+
+/* Segunda seção - Encanto Trançado (variação) */
+.conteudo2 {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 0 0 40px;
+  position: relative;
+  min-height: 300px;
+  gap: 40px;
+}
+
+.texto2 h2 {
+  flex: 1;
+  margin-top: 30px;
+  margin-left: 40px;
+  max-width: 700px;
+  font-size: 22px;
+  text-align: justify;
+}
+
+.texto2 p {
+  flex: 1;
+  margin-top: 15px;
+  margin-left: 40px;
+  max-width: 700px;
+  font-size: 22px;
+  text-align: justify;
+}
+
+.imagens-penteados2 {
+  position: relative;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+/* Terceira seção - Coque Aurora */
+.conteudo3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 40px 0 0 40px;
+  position: relative;
+  min-height: 300px;
+}
+
+.texto3 h3 {
+  flex: 1;
+  margin-top: 100px;
+  margin-left: 100px;
+  max-width: 700px;
+  font-size: 22px;
+  text-align: justify;
+}
+
+.texto3 p {
+  flex: 1;
+  margin-top: 50px;
+  margin-left: 100px;
+  max-width: 700px;
+  font-size: 22px;
+  text-align: justify;
+}
+
+.imagens-penteados3 {
+  position: relative;
+  margin-left: 80px;
+  margin-top: 0px;
+}
+
+/* Estilos comuns para imagens de penteados */
+.imagens-penteados img,
+.imagens-penteados2 img,
+.imagens-penteados3 img {
+  position: static;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 4px solid #e1bb8b;
+  box-shadow: 0 12px 32px rgba(124, 90, 31, 0.30), 0 2px 8px rgba(0,0,0,0.20);
+  background: linear-gradient(135deg, #fff8e1 0%, #e1bb8b 100%);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Rotações específicas */
+.imagens-penteados img,
+.imagens-penteados3 img {
+  transform: rotate(-4deg);
+}
+
+.imagens-penteados2 img {
+  transform: rotate(4deg);
+}
+
+/* Efeitos hover */
+.imagens-penteados img:hover,
+.imagens-penteados3 img:hover {
+  transform: scale(1.03) rotate(-5deg);
+  box-shadow: 0 20px 40px rgba(124, 90, 31, 0.25), 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.imagens-penteados2 img:hover {
+  transform: scale(1.03) rotate(5deg);
+  box-shadow: 0 20px 40px rgba(124, 90, 31, 0.25), 0 4px 16px rgba(0,0,0,0.15);
+}
+
+/* ===== SEÇÃO DE MÍDIA LADO A LADO ===== */
+.midia-lado-a-lado {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 30px;
+  margin-left: 0px;
+  margin-bottom: -60px;
+  gap: 135px;
+}
+
+.midia-lado-a-lado h2 {
+  margin-left: 600px;
+  margin-top: -400px;
+}
+
+/* Vídeo e texto */
+.vidio-e-texto {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.vidio-e-texto video {
+  border-radius: 18px;
+  border: 4px solid #e1bb8b;
+  box-shadow: 0 12px 32px rgba(124, 90, 31, 0.30), 0 2px 8px rgba(0,0,0,0.20);
+  background: linear-gradient(135deg, #fff8e1 0%, #e1bb8b 100%);
+  display: block;
+}
+
+.vidio-e-texto video:hover {
+  transform: scale(1.03);
+  box-shadow: 0 20px 40px rgba(124, 90, 31, 0.25), 0 4px 16px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.vidio-e-texto .texto-imagen {
+  max-width: 220px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  text-align: justify;
+}
+
+/* Imagem e texto */
+.imagem-e-texto {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.imagen img {
+  width: 300px;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 12px 32px rgba(124, 90, 31, 0.30), 0 2px 8px rgba(0,0,0,0.20);
+  border: 4px solid #e1bb8b;
+  background: linear-gradient(135deg, #fff8e1 0%, #e1bb8b 100%);
+  display: block;
+  margin: 0 auto;
+}
+
+.imagen img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 20px 40px rgba(124, 90, 31, 0.25), 0 4px 16px rgba(0,0,0,0.15);
+}
+
+/* Estilos de texto para mídia */
+.texto-imagen {
+  margin-top: 0;
+  max-width: 220px;
+  text-align: justify;
+  font-size: 18px;
+}
+
+.texto-imagen h2 {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.texto-imagen p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* ===== RODAPÉ E CRÉDITOS ===== */
+footer {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.creditos-final {
+  background: linear-gradient(90deg, #e1bb8b 0%, #fff8e1 100%);
+  padding: 40px 0 0 0;
+  margin-top: -60px;
+  width: 100%;
+  margin-bottom: -500px;
+}
+
+.creditos-coluna {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.creditos-coluna h3 {
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #7c5a1f;
+  text-align: center;
+}
+
+.creditos-info,
+.creditos-politicas,
+.creditos-logos,
+.creditos-criadores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 180px;
+  margin: 10px 0;
+}
+
+.creditos-info p,
+.creditos-criadores p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+}
+
+.creditos-politicas a {
+  color: #7c5a1f;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 8px;
+}
+
+.icones {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 10px;
+}
+
+.icones a:nth-child(1) {
+  margin-right: -21px;
+}
+
+.icones img {
+  transition: transform 0.2s;
+}
+
+.icones img:hover {
+  transform: scale(1.4);
+}
+
+/* ===== AJUSTES DE ESPAÇAMENTO ===== */
+/* Reduzir o espaçamento entre as seções de Encanto Trançado */
+.secao-penteado:nth-of-type(2) {
+  margin-bottom: 0;
+}
+
+.secao-penteado:nth-of-type(3) {
+  margin-top: 0;
+}
+
+/* ===== MEDIA QUERIES (RESPONSIVIDADE) ===== */
+@media (max-width: 900px) {
+  .creditos-coluna {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .creditos-info,
+  .creditos-politicas,
+  .creditos-logos,
+  .creditos-criadores {
+    min-width: unset;
+  }
+}
+
+.tudo {
+  margin-left: 100px; 
+}

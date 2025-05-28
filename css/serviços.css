@@ -1,0 +1,462 @@
+/* ===== ESTILOS GLOBAIS ===== */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("../arquivos/FUNDO\ OFICIAL.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* ===== TIPOGRAFIA ===== */
+h1 {
+  margin-left: 60px;
+  margin-right: 60px;
+  text-align: justify;
+  font-size: 30px;
+}
+
+h2 {
+  margin-left: 60px;
+  margin-right: 60px;
+  text-align: justify;
+  font-size: 20px;
+}
+
+p {
+  margin-left: 60px;
+  margin-right: 60px;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* ===== NAVEGAÇÃO (HOTBAR) ===== */
+.hotbar {
+  background: linear-gradient(to right, #e1bb8b, #fff8e1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.hotbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.hotbar-logo {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.hotbar-logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-text {
+  font-size: 22px;
+  font-weight: bold;
+  color: #7c5a1f;
+  margin-left: 10px;
+}
+
+.hotbar-links {
+  display: flex;
+  gap: 60px;
+  margin-left: 0;
+}
+
+.hot-link {
+  color: #7c5a1f;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 12px 25px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.hot-link:hover {
+  background-color: #7c5a1f;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.hot-link.active {
+  background-color: #7c5a1f;
+  color: white;
+}
+
+/* ===== BANNER PRINCIPAL ===== */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.banner-texto {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000000;
+  text-align: center;
+  padding: 30px 50px;
+  width: 80%;
+  max-width: 700px;
+}
+
+.banner-texto h1 {
+  font-size: 62px;
+  font-weight: 300;
+  letter-spacing: 8px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  color: #000000;
+  text-align: center;
+}
+
+/* ===== PERFIL PROFISSIONAL ===== */
+.professional-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 120px auto 60px;
+  max-width: 800px;
+  clear: both;
+}
+
+.profile-image {
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.circular-image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.circular-image:hover {
+  transform: scale(1.05);
+}
+
+.profile-info {
+  text-align: center;
+}
+
+.profession {
+  font-style: italic;
+  color: #666;
+  margin-top: 0;
+}
+
+/* ===== SEÇÃO SOBRE ===== */
+.Sobre {
+  margin: 40px 60px;
+  text-align: justify;
+  clear: both;
+}
+
+.Sobre h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.Sobre p {
+  font-size: 25px;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* ===== SERVIÇOS ===== */
+.servicos-titulo {
+  text-align: center;
+  margin: 40px auto 20px;
+  font-size: 36px;
+  color: #7c5a1f;
+  font-weight: 300;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.servicos-titulo::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #e1bb8b 0%, #fff8e1 100%);
+  margin: 15px auto 0;
+}
+
+.servicos-subtitulo {
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+/* ===== TABELAS DE SERVIÇOS ===== */
+.tabelas-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 60px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px 80px;
+  position: relative;
+  padding: 20px 0;
+  clear: both;
+}
+
+.tabela1,
+.tabela2,
+.tabela3,
+.tabela4,
+.tabela5,
+.tabela6 {
+  width: 300px;
+  height: 450px;
+  padding: 30px 20px;
+  background-image: linear-gradient(145deg, #fff8e1, #e1bb8b, #d6a361);
+  border-radius: 18px;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  box-sizing: border-box;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.tabela1:hover,
+.tabela2:hover,
+.tabela3:hover,
+.tabela4:hover,
+.tabela5:hover,
+.tabela6:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.tabela1 h3,
+.tabela2 h3,
+.tabela3 h3,
+.tabela4 h3,
+.tabela5 h3,
+.tabela6 h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.tabela1 p,
+.tabela2 p,
+.tabela3 p,
+.tabela4 p,
+.tabela5 p,
+.tabela6 p {
+  margin: 0 0 15px 0;
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.4;
+  padding: 0 5px;
+}
+
+.tabela1 p:not(:first-of-type),
+.tabela2 p:not(:first-of-type),
+.tabela3 p:not(:first-of-type),
+.tabela4 p:not(:first-of-type),
+.tabela5 p:not(:first-of-type),
+.tabela6 p:not(:first-of-type) {
+  margin-top: 20px;
+}
+
+/* ===== SEPARADORES ===== */
+/* Ocultar separadores mantidos no HTML */
+.separador, .separador2 {
+  display: none;
+}
+
+/* ===== CORREÇÕES DE LAYOUT E SOBREPOSIÇÃO ===== */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 400px;
+}
+
+/* Ajuste para o problema de sobreposição */
+.conteudo {
+  margin-bottom: 650px !important;
+  position: relative;
+  z-index: 1;
+  clear: both;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+.texto {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.vidio-e-texto {
+  position: relative;
+  z-index: 1;
+  margin-top: 680px !important;
+  clear: both;
+  display: block;
+  width: 100%;
+}
+
+.ritual-hidratacao {
+  position: relative;
+  z-index: 1;
+  margin-top: 700px !important;
+  clear: both;
+}
+
+.imagens-penteados, 
+.imagens-penteados2, 
+.imagens-penteados3 {
+  float: none !important;
+  display: block;
+  clear: both;
+  margin: 30px auto;
+  position: relative;
+  z-index: 2;
+}
+
+.midia-lado-a-lado {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  margin-top: 680px !important;
+}
+
+/* ===== RODAPÉ E CRÉDITOS ===== */
+.creditos-final {
+  background: linear-gradient(90deg, #e1bb8b 0%, #fff8e1 100%);
+  padding: 40px 0 0 0;
+  margin-top: 40px;
+  width: 100%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.creditos-coluna {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.creditos-coluna h3 {
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #7c5a1f;
+  text-align: center;
+}
+
+.creditos-info,
+.creditos-politicas,
+.creditos-logos,
+.creditos-criadores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 180px;
+  margin: 10px 0;
+}
+
+.creditos-info p,
+.creditos-criadores p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+}
+
+.creditos-politicas a {
+  color: #7c5a1f;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 8px;
+}
+
+/* Ícones sociais */
+.icones {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 10px;
+}
+
+.icones a:nth-child(1) {
+  margin-right: -21px;
+}
+
+.icones img {
+  transition: transform 0.2s;
+}
+
+.icones img:hover {
+  transform: scale(1.4);
+}
+
+/* ===== MEDIA QUERIES (RESPONSIVIDADE) ===== */
+@media (max-width: 900px) {
+  .creditos-coluna {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .creditos-info,
+  .creditos-politicas,
+  .creditos-logos,
+  .creditos-criadores {
+    min-width: unset;
+  }
+}
